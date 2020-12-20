@@ -70,7 +70,7 @@ class App extends Component {
   }
 
   savePlaylist() {
-    const trackURIs = this.state.playlist;
+    const trackURIs = this.state.playlist.map(track => track.uri);
   }
 
   search(searchTerm) {
